@@ -1,4 +1,6 @@
-# Team Yoda application - NCC Kraków 2018
+# Team Solo application - NCC Kraków 2018
+
+[![Build Status](https://travis-ci.org/netguru-code-college/krk-18-solo.svg?branch=master)](https://travis-ci.org/netguru-code-college/krk-18-solo)
 
 ## About
 
