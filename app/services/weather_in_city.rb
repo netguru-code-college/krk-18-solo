@@ -12,5 +12,5 @@ class WeatherInCity
   private
 
   attr_reader :weather_client, :coordinates_service
+  
 end
-
