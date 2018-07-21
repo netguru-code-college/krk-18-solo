@@ -13,13 +13,6 @@ wine = Category.find_by(name: 'Wine')
 cider = Category.find_by(name: 'Cider')
 whisky = Category.find_by(name: 'Whisky')
 
-categories = Category.create([{ name: 'Beer' }, { name: 'Whisky' }, { name: 'Wine' }, { name: 'Cider' }])
-
-beer = Category.find_by(name: 'Beer')
-wine = Category.find_by(name: 'Wine')
-whisky = Category.find_by(name: 'Whisky')
-cider = Category.find_by(name: 'Cider')
-
 Type.create([
   {
     name: 'IPA',
