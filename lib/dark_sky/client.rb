@@ -10,7 +10,7 @@ module DarkSky
     private
 
     def convert_farenheit_to_celsius(temperature)
-      ((temperature - 32) / 1.8000)
+      ((temperature - 32) / 1.8000).floor
     end
 
     def dark_sky_key

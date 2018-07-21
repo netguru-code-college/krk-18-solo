@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe DarkSky::Client do 
+RSpec.describe DarkSky::Client do
   let(:client){ described_class.new }
 
   describe "#get_temperature" do
@@ -41,7 +41,7 @@ RSpec.describe DarkSky::Client do
     subject { client.get_temperature(42.3601, -71.0589) }
     it 'returns temperature for given localization' do
       allow(Faraday).to receive(:get).and_return(response)
-      expect(subject).to eq 60
+      expect(subject).to eq 15
     end
   end
 end
