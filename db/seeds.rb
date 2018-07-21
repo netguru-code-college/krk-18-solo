@@ -46,6 +46,11 @@ Type.create([
     description: 'Lorem', 
     category_id: whisky.id
   }, 
+  {
+    name: 'Corellian', 
+    description: 'A type of alcoholic beverage from the planet Corellia', 
+    category_id: whisky.id
+  }, 
   { 
     name: 'IPA', 
     description: 'Lorem', 
