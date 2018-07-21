@@ -12,6 +12,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'faraday'
+gem 'devise'
+gem 'devise-bootstrapped'
 
 group :development, :test do
   gem 'pry'
