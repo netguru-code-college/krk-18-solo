@@ -283,6 +283,7 @@ Devise.setup do |config|
   # Devise secret key
   config.secret_key = '9512b0b05c0c716e38d291c492ec99411c9e40560c3dc33ff27c7527b70b2138c54c6c189946379ae7a03e6864ea972282f639c5d70ff34fd50d4b946938501a'
 
+
   config.omniauth :facebook, "841453999376116", "72c1a9f06b0320e02aacc462b7e923c2", callback_url: "http://localhost:3000/users/auth/facebook/callback"
 
 end

@@ -17,6 +17,7 @@ gem 'devise-bootstrapped'
 gem 'omniauth'
 gem 'omniauth-facebook'
 
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.7'
