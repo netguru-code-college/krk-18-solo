@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :categories
   end
+
+  get 'welcome/index'
+  root 'welcome#index'
+
+  resources :categories
 end

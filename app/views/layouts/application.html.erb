@@ -17,7 +17,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item <% if [params[:controller], params[:action]] == ['products', 'index'] %>active<% end %>"  ><%= link_to 'Alcohol list', admin_categories_path, class: "nav-link" %></li>
+          <li class="nav-item <% if [params[:controller], params[:action]] == ['products', 'index'] %>active<% end %>"  ><%= link_to 'Alcohol list', categories_path, class: "nav-link" %></li>
           <li class="nav-item <% if [params[:controller], params[:action]] == ['static', 'privacy'] %>active<% end %>"  ><%= link_to 'Our suggestion', '#', class: "nav-link" %></li>
         </ul>
       </div>
