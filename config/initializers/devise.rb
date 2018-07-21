@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '3a1be10cbe379108fdc9aa52032c092e09d68164d236ededc4542deb332f37367d7f6c300fcb2fd18268aa510485044060d742e58ae429558ec8403f88539262'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -283,6 +283,7 @@ Devise.setup do |config|
   # Devise secret key
   config.secret_key = '9512b0b05c0c716e38d291c492ec99411c9e40560c3dc33ff27c7527b70b2138c54c6c189946379ae7a03e6864ea972282f639c5d70ff34fd50d4b946938501a'
 
-  config.omniauth :facebook, "841453999376116", "72c1a9f06b0320e02aacc462b7e923c2", callback_url: "http://localhost:3000/users/auth/facebook/callback"
+
+  config.omniauth :facebook, Rails.application.credentials.facebook_app_id, Rails.application.credentials.facebook_app_secret, callback_url: "http://localhost:3000/users/auth/facebook/callback"
 
 end
