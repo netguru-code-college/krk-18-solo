@@ -14,6 +14,7 @@ gem 'jquery-rails'
 gem 'faraday'
 gem 'devise'
 gem 'devise-bootstrapped'
+gem 'omniauth', '~> 1.8', '>= 1.8.1'
 
 group :development, :test do
   gem 'pry'
