@@ -8,10 +8,10 @@ module DarkSky
     
     def get_temperature(lat, lang)
       response = Faraday.get "https://api.darksky.net/forecast/#{KEY}/#{lat},#{lang}"
-      convert_to_celsius(JSON.parse(response.body)['currently']['temperature'])
+      convert_farenheit_to_celsius (JSON.parse(response.body)['currently']['temperature'])
     end
 
-    def convert_to_celsius(temperature)
+    def convert_farenheit_to_celsius(temperature)
       ((temperature - 32) / 1.8000)
     end
   end
