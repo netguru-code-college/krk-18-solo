@@ -1,9 +1,6 @@
 class AlcoholMatcherService
-  def initialize
-  end
-
   def call(temperature, category_name)
-    find_by_category(temperature, category_name)
+    find_by_category(temperature.to_i, category_name)
   end
 
   private
@@ -13,15 +10,14 @@ class AlcoholMatcherService
       :cold
     elsif temperature < 25
       :cool
-    else 
+    else
       :hot
     end
-  end 
+  end
 
   def find_by_category(temperature, category_name)
     Type.includes(:category).where(
-      occasion: temperature_threshold(temperature), 'categories.name' => category_name
+      occasion: temperature_threshold(temperature), 'categories.name' => category_name,
     )
   end
 end
-
