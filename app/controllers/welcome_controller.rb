@@ -14,6 +14,10 @@ class WelcomeController < ApplicationController
     @alcohols = AlcoholMatcherService.new.call(@temperature, user_preference)
   end
 
+  def notify
+    
+  end
+
   private
 
   def get_city_with_weather_in_city_service
