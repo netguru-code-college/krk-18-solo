@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WeatherInCity
   def initialize(weather_client: DarkSky::Client.new, coordinates_service: CoordinatesService.new)
     @coordinates_service = coordinates_service
@@ -12,5 +14,4 @@ class WeatherInCity
   private
 
   attr_reader :weather_client, :coordinates_service
-  
 end

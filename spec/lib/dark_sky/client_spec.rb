@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe DarkSky::Client do
-  let(:client){ described_class.new }
+  let(:client) { described_class.new }
 
-  describe "#get_temperature" do
+  describe '#get_temperature' do
     let(:response) do
       double('response', body: response_body)
     end
@@ -12,16 +14,16 @@ RSpec.describe DarkSky::Client do
       {
         "latitude": 42.3601,
         "longitude": -71.0589,
-        "timezone": "America/New_York",
+        "timezone": 'America/New_York',
         "currently": {
           "time": 1509993277,
-          "summary": "Drizzle",
-          "icon": "rain",
+          "summary": 'Drizzle',
+          "icon": 'rain',
           "nearestStormDistance": 0,
           "precipIntensity": 0.0089,
           "precipIntensityError": 0.0046,
           "precipProbability": 0.9,
-          "precipType": "rain",
+          "precipType": 'rain',
           "temperature": 60,
           "apparentTemperature": 66.31,
           "dewPoint": 60.77,
