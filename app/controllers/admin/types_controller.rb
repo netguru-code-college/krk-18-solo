@@ -1,7 +1,7 @@
 module Admin
   class TypesController < ApplicationController
     def index
-      @type = Type.all
+      @types = Type.all
     end
 
     def new
