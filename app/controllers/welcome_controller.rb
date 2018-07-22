@@ -13,7 +13,7 @@ class WelcomeController < ApplicationController
 
   def show
     @temperature = params[:temperature]
-    @city = params[:city_name].capitalize!
+    @city = params[:city_name].capitalize
   end
 
   private 
