@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   resource :account, only: [:edit, :update]
 
   namespace :admin do
-    resources :categories
+    resources :categories do
+      resources :types, exept: [:create]
+    end
+    resources :types, only: [:create]
   end
 
   get 'welcome/index'
