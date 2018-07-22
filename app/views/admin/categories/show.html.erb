@@ -15,9 +15,6 @@
       <td><%= type.description %></td>
       <td><%= type.occasion %></td>
       <td><%= type.category.name %></td>
-      <td><%= link_to 'Yes', [type.category, type], 
-      method: :delete, 
-      data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>

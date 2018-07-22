@@ -7,15 +7,9 @@
   </tr>
   <% @categories.each do |category| %>
     <tr>
-<<<<<<< HEAD
-      <td><%= category.name %></td>
-      <td><%= link_to 'Yes', admin_category_path(category),
-      method: :delete,
-=======
       <td><%= link_to category.name, admin_category_path(category) %></td>
       <td><%= link_to 'Yes', admin_category_path(category), 
       method: :delete, 
->>>>>>> 220dde2b10a13df1444a135dbc74493a89df7212
       data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
