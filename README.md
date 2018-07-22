@@ -13,3 +13,39 @@ We automagically convert your location to degrees and degrees to alcohol of your
 * Match temperature to alcohol
 * Add via admin panel: alcohol categories & types
 * Send an sms to friends
+
+
+### Technology stack
+ * Rails 5.2
+
+
+## Prerequisites
+
+You will need the following things properly installed on your computer:
+ * ruby
+ * bundler
+ * node
+
+## Dependencies
+  * Twilio API
+  * DarkSky API
+  * Geocoder
+
+## Installation
+
+```sh
+$ bundle install
+```
+
+## Running / Development
+
+
+```sh
+$ rails s
+```
+
+## Testing
+
+```sh
+$ bundle exec rspec
+```
