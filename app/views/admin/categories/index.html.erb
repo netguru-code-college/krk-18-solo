@@ -1,7 +1,19 @@
-<h1>All categories</h1>
+<h1>Category list</h1>
 
-<ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Delete</th>
+    <th></th>
+  </tr>
   <% @categories.each do |category| %>
-    <li><%= category.name %></li>
+    <tr>
+      <td><%= category.name %></td>
+      <td><%= link_to 'Yes', admin_category_path(category), 
+      method: :delete, 
+      data: { confirm: 'Are you sure?' } %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
+
+<h5><%= link_to 'Add a new category', new_admin_category_path %></h5>
