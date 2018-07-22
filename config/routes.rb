@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :posts
 
   namespace :admin do
-    resources :categories
+    resources :categories do
+      resources :types
+    end
   end
 
   get 'welcome/index'
