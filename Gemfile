@@ -16,6 +16,7 @@ gem 'devise'
 gem 'devise-bootstrapped'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'geocoder'
 gem 'config'
 
 group :development, :test do
