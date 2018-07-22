@@ -8,8 +8,8 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
   root 'welcome#index'
+  post 'welcome/get_city', to: 'welcome#get_city'
+  get 'welcome/show', to: 'welcome#show'
 
   resources :categories
-post 'welcome/get_city', to: 'welcome#get_city'
-get 'welcome/show', to: 'welcome#show'
 end
