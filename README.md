@@ -1,28 +1,51 @@
 # Team Solo application - NCC Kraków 2018
 
-[![Build Status](https://travis-ci.org/netguru-code-college/krk-18-solo.svg?branch=master)](https://travis-ci.org/netguru-code-college/krk-18-solo)
+Hello from Team Solo, the best team of them all.
+We are: Piotrek, Konrad, Kamil, Marta and our mentor/product owner Norbert.
 
-## About
+We have created a magical app that will tell you which alcohol you should drink according to the weather in the city which you are currently at.
+We automagically convert your location to degrees and degrees to alcohol of your preference. Don't have a preference? We will suggest you a beer then!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
 
-* Ruby version
+* Find city by name
+* Convert city to local temperature
+* Match temperature to alcohol
+* Add via admin panel: alcohol categories & types
+* Send an sms to friends
 
-* System dependencies
 
-## Setup
+### Technology stack
+ * Rails 5.2
 
-* Configuration
 
-* Database creation
+## Prerequisites
 
-* Database initialization
+You will need the following things properly installed on your computer:
+ * ruby
+ * bundler
+ * node
 
-* How to run the test suite
+## Dependencies
+  * Twilio API
+  * DarkSky API
+  * Geocoder
 
-* Services (job queues, cache servers, search engines, etc.)
+## Installation
 
-* Deployment instructions
+```sh
+$ bundle install
+```
 
-* ...
+## Running / Development
+
+
+```sh
+$ rails s
+```
+
+## Testing
+
+```sh
+$ bundle exec rspec
+```
