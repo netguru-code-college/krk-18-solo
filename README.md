@@ -1,3 +1,5 @@
+![Drunk Solo](/doc/solo-beer.jpg?raw=true "Drunk Solo")
+
 # Team Solo application - NCC Kraków 2018
 
 Hello from Team Solo, the best team of them all.
