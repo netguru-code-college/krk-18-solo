@@ -1,7 +1,23 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i,400');
 
 body { 
   background: url(/assets/cheers.jpeg);
   background-repeat: no-repeat;
   background-size: 100%; 
+}
+
+.temperature {
+	color:#fff;
+	font-size: 100px;	
+	padding: 5px 5px 5px 15px;
+	font-family: 'Roboto', sans-serif, 100i;
+	
+}
+
+.city {
+	color:#fff;
+	font-size: 80px;	
+	padding: 0px 0px 0px 15px;
+	font-family: 'Playfair Display', serif;
 }

@@ -23,5 +23,6 @@ class WelcomeController < ApplicationController
   def user_preference
     return 'Beer' unless current_user
     current_user.preference
+
   end
 end
