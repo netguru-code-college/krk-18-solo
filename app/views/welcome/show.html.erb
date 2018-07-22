@@ -16,14 +16,20 @@
 	</div>
 </div>
 
+<div class="results">
+	<div class="row">
+		<%= @temperature %>
+		<%= @city %>
 
-<%= @temperature %>
-<%= @city %>
+	Co do picia?
 
-Co do picia?
-<% @alcohols&.each do |alcohol| %>
-  <ul>
-    <li><%= alcohol.name %></li>
-  </ul>
-<% end %>
+	 <div class="row">
+		<% @alcohols&.each do |alcohol| %>
+			<ul>
+				<li><%= alcohol.name %></li>
+			</ul>
+		<% end %>
+	 </div>
+	</div>
+</div>
 
