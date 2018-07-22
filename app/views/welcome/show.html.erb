@@ -1,6 +1,14 @@
-<div class="container-fluid">
-
-<div class="temperature"><%= @temperature %>&#176C</div>
-<div class="city"><%= @city %></div>
-
+<div class="container">
+	<div class="row">
+		<div class="col-md-auto">
+			<div class="temperature"><%= @temperature %>&#176C</div>
+		</div>
+		<div class="col-md-auto">
+			<div class="city"><%= @city %></div>
+		</div>	
+		<div class="col-md-auto">
+			<div class="city"><%= image_tag("beer.png", :alt => "beer") %></div>
+		</div>	
+	</div>
 </div>
+
