@@ -16,3 +16,14 @@
 	</div>
 </div>
 
+
+<%= @temperature %>
+<%= @city %>
+
+Co do picia?
+<% @alcohols&.each do |alcohol| %>
+  <ul>
+    <li><%= alcohol.name %></li>
+  </ul>
+<% end %>
+

@@ -27,6 +27,7 @@
              <%= link_to "Log out", destroy_user_session_path,
                 method: :delete,
                 class: "btn btn-outline-success my-2 my-sm-2" %>
+              <%= link_to 'Settings', edit_account_path, class: "btn btn-primary my-2 my-sm-2" %>
         <% else %>
           <%= link_to "Sign up", new_user_registration_path, class: "btn btn-outline-success mr-sm-2" %>
           <%= link_to "Log in", new_user_session_path, class: "btn btn-outline-success my-2 my-sm-2" %>
@@ -43,4 +44,3 @@
     </div>
   </body>
 </html>
- 
