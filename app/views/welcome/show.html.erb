@@ -27,3 +27,11 @@ Co do picia?
   </ul>
 <% end %>
 
+<%= form_for :notify, url: messages_path do |form| %>
+	<%= form.text_field :phone_number %>
+	<%= form.hidden_field :temperature, value: @temperature%>
+	<%= form.hidden_field :city, value: @city %>
+	<%= form.hidden_field :alcohol, value: @alcohols.first&.name %>
+  <%= form.submit 'Wyslij informacje przez SMS' %>
+<% end %>
+
