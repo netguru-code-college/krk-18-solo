@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :categories
+post 'welcome/get_city', to: 'welcome#get_city'
+get 'welcome/show', to: 'welcome#show'
 end
