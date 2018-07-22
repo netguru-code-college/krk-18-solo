@@ -15,9 +15,20 @@
       <td><%= type.description %></td>
       <td><%= type.occasion %></td>
       <td><%= type.category.name %></td>
+      <td><%= link_to 'Yes', [type.category, type], 
+      method: :delete, 
+      data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
+
+<h2>Add a type:</h2>
+<%= simple_form_for Type.new, url: admin_types_path(category_id: @category.id) do |t| %>
+  <%= t.input :name %>
+  <%= t.input :description %>
+  <%= t.select :occasion, ['cold', 'cool', 'hot'] %>
+  <%= t.button :submit, category_id: @category.id %>
+<% end %>
 
 
 

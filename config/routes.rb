@@ -6,8 +6,9 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories do
-      resources :types
+      resources :types, exept: [:create]
     end
+    resources :types, only: [:create]
   end
 
   get 'welcome/index'
