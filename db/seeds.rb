@@ -55,7 +55,12 @@ Type.create([
     occasion: 2
   },
   {
-    name: 'Riesling',
+    name: 'Corellian', 
+    description: 'A type of alcoholic beverage from the planet Corellia', 
+    category_id: whisky.id
+  }, 
+  { 
+    name: 'Riesling', 
     description: 'Lighter than Chardonnay wines. The aromas generally include fresh apples. The riesling variety expresses itself very differently depending on the district and the winemaking. Rieslings should taste fresh. If they do, then they might also prove tastier and tastier as they age.', 
     category_id: wine.id,
     occasion: 2
