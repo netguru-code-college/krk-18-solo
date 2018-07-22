@@ -6,7 +6,7 @@ class WeatherInCity
 
   def call(city_name)
     lat, lang = coordinates_service.call(city_name)
-    weather_client.call(lat, lang)
+    weather_client.get_temperature(lat, lang)
   end
 
   private
